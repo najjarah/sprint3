@@ -1,0 +1,37 @@
+#all_site{
+		/* border: 5px dashed; */
+		width: 85%;
+		margin: auto;
+		padding-top: 20px;
+		
+}
+
+
+#mynav{
+	/* border: 5px dashed; */
+}
+
+#logo{
+	width: 50%;
+	margin: auto;
+}
+
+
+.navbar-inner{
+    margin: auto;
+}
+
+#navdate{
+	font-weight: bold;
+	font-size: x-large;
+}
+
+
+#mydate{
+	text-align: center;
+}
+
+
+p{
+	text-align: center;
+}
