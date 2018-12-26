@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Loggitor</title>
+
+
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet"
+	href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<!-- jQuery library -->
+<script
+	src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<!-- Latest compiled JavaScript -->
+<script
+	src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<!-- my css for home page -->
+<link rel="stylesheet" href="_css/home.css">
+
+<!-- my js  -->
+<script src="_js/home.js"></script>
+
+
+</head>
+<body onload="init()">
+
+	<div class="container" id="all_site">
+
+		<div class="row" id="mynav">
+
+			<div class="col-sm-4" id="navdate"></div>
+
+			<div class="col-sm-4">
+
+				<nav class="navbar navbar-default">
+					<div class="navbar-inner" class="container-fluid">
+						<ul class="nav navbar-nav">
+							<li class="active"><a href="#">Home</a></li>
+							<li><a href="#">Solutions</a></li>
+							<li><a href="#">Events</a></li>
+							<li><a href="#">About</a></li>
+						</ul>
+					</div>
+				</nav>
+
+			</div>
+
+			<div class="col-sm-4">
+				<img class="center-block" id="logo" src="_img/amdocs-logo.png">
+			</div>
+
+		</div>
+
+		<!-- *** the body of the site - tables *** -->
+
+		<div class="row">
+			<!-- end of div that contain 3 tables -->
+			<h2 id="mydate">Amdocs System Status at date</h2>
+
+			<!-- the first table -->
+			<div class="col-md-2">
+
+				<p>Defects by App</p>
+				<table class="table">
+					<thead>
+						<tr>
+							<th>App</th>
+							<th>Def Num</th>
+							<th>Def Percentage</th>
+						</tr>
+					</thead>
+					<tbody id="left-table">
+					</tbody>
+				</table>
+
+			</div>
+
+
+			<!-- the middle table -->
+			<div class="col-md-8">
+				<p>Defects Log - All the defects with severity, description and
+					suggested solution</p>
+				<table class="table">
+					<thead>
+						<tr>
+							<th>seqID</th>
+							<th>App</th>
+							<th>Code</th>
+							<th>Severity</th>
+							<th>Description</th>
+							<th>Solution</th>
+						</tr>
+					</thead>
+					<tbody id="mid-table">
+					</tbody>
+				</table>
+			</div>
+
+
+
+			<!-- the last table -->
+			<div class="col-md-2">
+
+				<p>Defects by Severity</p>
+				<table class="table">
+					<thead>
+						<tr>
+							<th>Severity</th>
+							<th>Def Num</th>
+							<th>Def</th>
+						</tr>
+					</thead>
+					<tbody id="right-table">
+					</tbody>
+				</table>
+
+			</div>
+
+			<!-- end of div that contain 3 tables -->
+		</div>
+
+
+	</div>
+
+
+
+
+
+</body>
+</html>
